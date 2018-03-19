@@ -35,7 +35,7 @@ startServer = (params) ->
       done null, site
 
   farm = (req, res, next) ->
-    if argv.f
+    if argv.farm
       next()
     else
       res.status(404).send {error: 'service requires farm mode'}
